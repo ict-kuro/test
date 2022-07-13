@@ -1,9 +1,9 @@
 CC = gcc
-CFLAGS = -Wall -O
+CFLAGS = -Wall -O -lm
 TARGET = main
 SRCS = main.c
-
-$TARGET : $(OBJS)
+LDFLAGS = 
+$(TARGET): $(SRCS)
 
 clean:
-	rm 
+	rm main  
